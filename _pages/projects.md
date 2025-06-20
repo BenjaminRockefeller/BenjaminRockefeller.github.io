@@ -6,8 +6,6 @@ description: >
   A showcase of applied AI systems: Large Language Models in Content Generation, Finance, and Education.
 nav: true
 nav_order: 2
-display_categories: [work]
-horizontal: false
 ---
 
 ## Projects
@@ -16,86 +14,78 @@ A curated selection of applied AI systems developed by Benjamin L. Rockefeller (
 
 ---
 
-### 🧠 Featured Projects
+<div class="row row-cols-1 row-cols-md-3 g-4">
 
-#### 🚀 Financial Research Report Generation Platform  
-*A Context-Aware RAG System with Private Deployment for U.S. Stock Analysis*  
-> Integrates multi-stage retrieval, prompt injection, and hallucination suppression to generate structured, source-grounded equity research content.
-
----
-
-#### 🤖 Intelligent Quantitative Strategy Generation Platform  
-*Causal Modeling + RLHF for Explainable Backtesting Optimization*  
-> Supports end-to-end strategy generation, multi-task knowledge distillation, and reinforcement learning-based feedback training in quantitative finance.
-
----
-
-#### 🛡️ AI-Driven Financial Fraud Detection System  
-*Multi-Agent Framework for High-Explainability Risk Control*  
-> Solves false positives and process disconnects using LangGraph-based agents, GAT modeling, RLHF reward tuning, and prompt-layer defenses.
-
----
-
-#### 🧩 Enterprise-Grade LLM Deployment Optimization Platform  
-*Multi-Task Fine-Tuning with QLoRA and Efficient Inference for Private Use*  
-> Implements LoRA-based parameter-efficient fine-tuning on sentiment classification and NER tasks, achieving fast, scalable, and low-cost private deployment.
-
----
-
-#### ⚙️ High-Performance Multi-Model Inference Optimization Platform  
-*Low-Latency Serving with Tensor Parallelism and INT8 Quantization*  
-> Accelerates multi-model deployment using parallel computation frameworks and quantized models, enabling inference under real-time and resource-limited constraints.
-
----
-
-#### 🧬 Multimodal Content Generation and Publishing Platform  
-*Causality-Aware and Controllable AI for Short Video, Copywriting, and Voice-Guided Content*  
-> Supports multimodal script generation, visual-text synthesis, and dynamic voice-driven prompt control with content layout automation.
-
----
-
-<!-- Project Cards Section -->
-
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+<!-- Project 1 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/finance-rag.jpg" class="card-img-top" alt="finance rag">
+    <div class="card-body">
+      <h5 class="card-title">📊 Financial Research Report Generation Platform</h5>
+      <p class="card-text">A context-aware RAG system with private deployment for U.S. stock analysis.</p>
+      <a href="/projects/financial-rag.html" class="btn btn-outline-primary">View Project</a>
     </div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-{% else %}
-  {% assign sorted_projects = site.projects | sort: "importance" %}
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+</div>
+
+<!-- Project 2 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/quant-strategy.jpg" class="card-img-top" alt="quant strategy">
+    <div class="card-body">
+      <h5 class="card-title">📈 Intelligent Quantitative Strategy Platform</h5>
+      <p class="card-text">Causal modeling + RLHF for explainable backtesting optimization in quant finance.</p>
+      <a href="/projects/quant-strategy.html" class="btn btn-outline-primary">View Project</a>
     </div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+</div>
+
+<!-- Project 3 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/fraud-detection.jpg" class="card-img-top" alt="fraud detection">
+    <div class="card-body">
+      <h5 class="card-title">🛡️ AI-Driven Financial Fraud Detection System</h5>
+      <p class="card-text">Multi-agent framework with LangGraph, RLHF, and GAT for risk control.</p>
+      <a href="/projects/fraud-detection.html" class="btn btn-outline-primary">View Project</a>
+    </div>
   </div>
-  {% endif %}
-{% endif %}
+</div>
+
+<!-- Project 4 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/llm-deploy.jpg" class="card-img-top" alt="llm deploy">
+    <div class="card-body">
+      <h5 class="card-title">🚀 Enterprise LLM Deployment Optimization</h5>
+      <p class="card-text">Multi-task QLoRA fine-tuning + vLLM inference for private production use.</p>
+      <a href="/projects/llm-deploy.html" class="btn btn-outline-primary">View Project</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 5 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/inference-opt.jpg" class="card-img-top" alt="inference opt">
+    <div class="card-body">
+      <h5 class="card-title">⚙️ High-Performance Multi-Model Inference</h5>
+      <p class="card-text">Low-latency serving with tensor parallelism and INT8 quantization.</p>
+      <a href="/projects/inference-opt.html" class="btn btn-outline-primary">View Project</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 6 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="/assets/img/projects/multimodal-content.jpg" class="card-img-top" alt="multimodal content">
+    <div class="card-body">
+      <h5 class="card-title">🧬 Multimodal Content Generation Platform</h5>
+      <p class="card-text">Causality-aware AI for short video, copywriting, and voice-guided content.</p>
+      <a href="/projects/multimodal-gen.html" class="btn btn-outline-primary">View Project</a>
+    </div>
+  </div>
+</div>
+
 </div>
