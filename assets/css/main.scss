@@ -53,3 +53,13 @@ h3 {
   font-size: 24px;
   font-weight: 600;
 }
+
+/* === 自定义头像显示位置与大小优化 === */
+#profile {
+  margin-top: -20px;
+  margin-right: -30px;
+}
+
+#profile img {
+  width: 240px;
+}
