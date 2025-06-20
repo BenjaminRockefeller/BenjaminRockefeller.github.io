@@ -9,10 +9,10 @@ profile:
   image: ben.jpg
   image_circular: true
   more_info: >
-<p style="font-size:18px; font-weight:600;">MSc in Applied Economics, Nanyang Technological University</p>
-<p style="font-size:17px;">BA in International Economics and Trade, Nankai University</p>
-<p style="font-size:15px;"><a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
-<p style="font-size:15px;"><a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
+    <p style="font-size:18px; font-weight:600;">MSc in Applied Economics, Nanyang Technological University</p>
+    <p style="font-size:17px;">BA in International Economics and Trade, Nankai University</p>
+    <p style="font-size:15px;"><a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
+    <p style="font-size:15px;"><a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
 
 selected_papers: false  
 social: true 
