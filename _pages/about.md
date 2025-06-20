@@ -26,22 +26,15 @@ latest_posts:
 ---
 
 ## 🔷 Research Interest
-
-**From fluency to trust: how do we build reasoning-capable LLMs?**
-
-My research explores how to move large language models (LLMs) beyond surface fluency—toward dependable, reflective, and cognitively aligned reasoning.
-
-Today’s models speak well—but they hallucinate, forget, and fail to explain themselves. This isn’t just a technical flaw—it’s a cognitive gap that threatens how humans trust machines.
-
-To solve this, I focus on closed-loop generation—designing models that reflect, revise, and adapt. Key systems include:
-
-- 🌀 **REFLEXION**: Multi-step feedback loops embedded in Transformers, reducing hallucinations and improving interpretability.  
-- 🔍 **CAT (Citation-Aware Tagging)**: Anchors generations to verifiable sources, enabling traceability and epistemic integrity.  
-- 🧠 **MEMOFORMER**: Adds long-term memory across documents, powering multi-context reasoning over extended timelines.  
-
-I also explore multimodal cognition and nonlinear inference—enabling models to self-interrogate, reason across text/image/data, and dynamically adapt to ambiguity.
-
-I don’t just study how LLMs generate language—**I build systems that reason, reflect, and earn trust.**
+What does it take for AI to be truly trustworthy?
+Not just fluency, but cognition—with conscience.
+Today’s LLMs generate fluent answers—yet can’t distinguish truth from fiction, explain their reasoning, or fix mistakes. This is not a bug, but a cognitive gap between language and thought.
+My research bridges this gap by designing closed-loop generation systems—models that reflect, revise, and justify their outputs in real time, such as REFLEXION, which embeds structured feedback loops into Transformers to mitigate hallucinations, and CAT, a citation-aware tagging system that grounds outputs in verifiable sources.
+These systems are not patches.They’re prototypes of a new generation of cognitively aligned models—capable not just of answering, but of thinking, explaining, and improving.
+In the long term, I aim to move beyond sequential token prediction toward nonlinear, associative, and adaptive inference—mirroring human cognition through structured internal dynamics, not imitation.
+That means being precise enough to decide,
+grounded enough to be verified,
+and self-evolving enough to grow beyond its limits.
 
 ---
 
