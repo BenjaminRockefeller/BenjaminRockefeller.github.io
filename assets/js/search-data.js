@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-项目仓库展示",
-          title: "项目仓库展示",
-          description: "展示本人在 GitHub 上的核心 AI 项目与公开代码，涵盖 RAG 系统、LoRA 微调、智能体编排等方向。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
+          },
+        },{id: "nav-项目仓库展示",
+          title: "项目仓库展示",
+          description: "展示本人在 GitHub 上的核心 AI 项目与公开代码，涵盖 RAG 系统、LoRA 微调、智能体编排等方向。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
           },
         },{id: "nav-blog",
           title: "blog",
