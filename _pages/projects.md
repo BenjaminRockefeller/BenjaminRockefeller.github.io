@@ -2,12 +2,14 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A showcase of applied AI systems: Large Language Models in Content Generation, Finance, and Education.
+description: >
+  A showcase of applied AI systems: Large Language Models in Content Generation, Finance, and Education.
 nav: true
 nav_order: 2
 display_categories: [work]
 horizontal: false
 ---
+
 
 <!-- pages/projects.md -->
 <div class="projects">
