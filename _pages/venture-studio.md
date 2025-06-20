@@ -4,7 +4,7 @@ permalink: /repositories/
 title: 项目仓库展示
 description: 展示本人在 GitHub 上的核心 AI 项目与公开代码，涵盖 RAG 系统、LoRA 微调、智能体编排等方向。
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 # 🚀 GitHub 项目仓库展示
