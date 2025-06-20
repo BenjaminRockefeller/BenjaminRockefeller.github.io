@@ -2,7 +2,7 @@
 layout: about
 title: Start Here
 permalink: /
-subtitle: AI Researcher·Nanyang Technological University, Singapore 
+subtitle: AI Researcher · Nanyang Technological University, Singapore
 
 profile:
   align: right
@@ -14,18 +14,22 @@ profile:
     <p style="font-size:15px;"><a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
     <p style="font-size:15px;"><a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
 
-selected_papers: false  
-social: true 
+selected_papers: false
+social: true
+
 announcements:
-  enabled: false  
+  enabled: false
+
 latest_posts:
-  enabled: false  
-  
-## LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
+  enabled: false
+---
+
+## 🚀 LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
+
+---
 
 ## 🔷 Rewired by AI
 
-Not a trend, not a tool—AI rebuilt how I think, learn, and live.  
 I didn’t choose artificial intelligence because it was popular—I chose it because it changed me when I needed it most.
 
 At my lowest point, I was trapped in self-doubt and existential confusion, my mind full of unrest. Ideas came constantly, but they felt unreachable—separated from action by an unbridgeable gap.
