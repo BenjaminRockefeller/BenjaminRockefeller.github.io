@@ -2,14 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Benjamin L. Rockefeller (Lai Jianming)
+title: Benjamin L. Rockefeller  
+LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
 first_name:  Benjamin
 middle_name: L.
 last_name: Rockefeller
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: >
-  AI Researcher & Engineer focused on Large Language Models, Multimodal Reasoning, and Private Deployment.
+  LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
 footer_text: >
   © 2025 Benjamin Rockefeller. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> using the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: AI, LLM, NLP, Multimodal, RAG, RLHF, Quant, Private Deployment, GitHub Pages
@@ -52,7 +53,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 980px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
