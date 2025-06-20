@@ -2,27 +2,29 @@
 layout: about
 title: Start Here
 permalink: /
-subtitle: AI Researcher · Nanyang Technological University, Singapore
+subtitle: LLM Engineer | AI Researcher | Economics-Driven Systems Thinker from Nanyang Technological University
 
 profile:
   align: right
   image: ben.jpg
   image_circular: true
+  image_style: "margin-top: -30px;"  # 将头像整体上移，贴近标题
   more_info: >
-    <p style="font-size:18px; font-weight:600;">MSc in Applied Economics, Nanyang Technological University</p>
-    <p style="font-size:17px;">BA in International Economics and Trade, Nankai University</p>
-    <p style="font-size:15px;"><a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
-    <p style="font-size:15px;"><a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
+    <div style="margin-top: 1.2em; font-size: 17px; line-height: 1.6;">
+      <p><strong>🎓 MSc in Applied Economics</strong><br>Nanyang Technological University</p>
+      <p><strong>🎓 BA in International Economics and Trade</strong><br>Nankai University</p>
+      <p><strong>📬</strong> <a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
+      <p><strong>🔗</strong> <a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
+    </div>
 
 selected_papers: false
-social: true
-
+social: false
 announcements:
   enabled: false
-
 latest_posts:
   enabled: false
 ---
+
 ## 🔷 Research Interest
 
 **From fluency to trust: how do we build reasoning-capable LLMs?**
