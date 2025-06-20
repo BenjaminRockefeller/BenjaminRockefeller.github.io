@@ -23,25 +23,23 @@ announcements:
 latest_posts:
   enabled: false
 ---
+## 🔷 Research Interest
 
-## 🚀 LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
+**From fluency to trust: how do we build reasoning-capable LLMs?**
 
----
+My research explores how to move large language models (LLMs) beyond surface fluency—toward dependable, reflective, and cognitively aligned reasoning.
 
-## 🔷 Rewired by AI
+Today’s models speak well—but they hallucinate, forget, and fail to explain themselves. This isn’t just a technical flaw—it’s a cognitive gap that threatens how humans trust machines.
 
-I didn’t choose artificial intelligence because it was popular—I chose it because it changed me when I needed it most.
+To solve this, I focus on closed-loop generation—designing models that reflect, revise, and adapt. Key systems include:
 
-At my lowest point, I was trapped in self-doubt and existential confusion, my mind full of unrest. Ideas came constantly, but they felt unreachable—separated from action by an unbridgeable gap.
+- 🌀 **REFLEXION**: Multi-step feedback loops embedded in Transformers, reducing hallucinations and improving interpretability.  
+- 🔍 **CAT (Citation-Aware Tagging)**: Anchors generations to verifiable sources, enabling traceability and epistemic integrity.  
+- 🧠 **MEMOFORMER**: Adds long-term memory across documents, powering multi-context reasoning over extended timelines.  
 
-Then I encountered AI. It opened a new path—not just a toolset, but a restructuring of how I think.  
-It became a way forward—a framework for continuous growth and self-transcendence.
+I also explore multimodal cognition and nonlinear inference—enabling models to self-interrogate, reason across text/image/data, and dynamically adapt to ambiguity.
 
-To me, AI is not just a technology—it’s a cognitive revolution.  
-It gave me the ability to turn abstract visions into grounded systems.
-
-I chose AI not because it trends, but because it helps me break through mental limits and build intelligent systems that think, adapt, and evolve.  
-AI changed me—and now, I choose to evolve with it.
+I don’t just study how LLMs generate language—**I build systems that reason, reflect, and earn trust.**
 
 ---
 
@@ -66,21 +64,3 @@ I build for purpose—and I deliver where it counts.
 - Robustness & Evaluation: prompt stress tests, hallucination benchmarks, intent-grounded metrics  
 
 ---
-
-## 🔷 Research Interest
-
-**From fluency to trust: how do we build reasoning-capable LLMs?**
-
-My research explores how to move large language models (LLMs) beyond surface fluency—toward dependable, reflective, and cognitively aligned reasoning.
-
-Today’s models speak well—but they hallucinate, forget, and fail to explain themselves. This isn’t just a technical flaw—it’s a cognitive gap that threatens how humans trust machines.
-
-To solve this, I focus on closed-loop generation—designing models that reflect, revise, and adapt. Key systems include:
-
-- 🌀 **REFLEXION**: Multi-step feedback loops embedded in Transformers, reducing hallucinations and improving interpretability.  
-- 🔍 **CAT (Citation-Aware Tagging)**: Anchors generations to verifiable sources, enabling traceability and epistemic integrity.  
-- 🧠 **MEMOFORMER**: Adds long-term memory across documents, powering multi-context reasoning over extended timelines.  
-
-I also explore multimodal cognition and nonlinear inference—enabling models to self-interrogate, reason across text/image/data, and dynamically adapt to ambiguity.
-
-I don’t just study how LLMs generate language—**I build systems that reason, reflect, and earn trust.**
