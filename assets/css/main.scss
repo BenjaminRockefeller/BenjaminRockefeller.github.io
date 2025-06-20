@@ -23,3 +23,33 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+// ---------------------------------------------------------
+// ⬇️ 以下为你追加的自定义字体设置代码，控制正文与标题字号
+// ---------------------------------------------------------
+
+body {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.page__content {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
