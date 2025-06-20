@@ -9,37 +9,19 @@ profile:
   image: ben.jpg
   image_circular: true
   more_info: >
-    <p>Nanyang Technological University</p>
-    <p>Singapore</p>
-    <p>jianming001@e.ntu.edu.sg</p>
-    
+<p style="font-size:18px; font-weight:600;">MSc in Applied Economics, Nanyang Technological University</p>
+<p style="font-size:17px;">BA in International Economics and Trade, Nankai University</p>
+<p style="font-size:15px;"><a href="mailto:jianming001@e.ntu.edu.sg">jianming001@e.ntu.edu.sg</a></p>
+<p style="font-size:15px;"><a href="https://linkedin.com/in/benjaminrockefeller" target="_blank">LinkedIn</a></p>
+
 selected_papers: false  
 social: true 
-
 announcements:
   enabled: false  
- 
-
 latest_posts:
   enabled: false  
   
----
-## Benjamin L. Rockefeller (Lai Jianming)
-
-🎓 **Nanyang Technological University**  
-MSc in Applied Economics
-
-🎓 **Nankai University**  
-BA in International Economics and Trade
-
-📧 **Email**: [jianming001@e.ntu.edu.sg](mailto:jianming001@e.ntu.edu.sg)  
-🔗 **LinkedIn**: [linkedin.com/in/benjaminrockefeller](https://linkedin.com/in/benjaminrockefeller)
-
----
-
-## 🚀 LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
-
----
+## LLM Engineer · AI Researcher · Economics-Driven Systems Thinker
 
 ## 🔷 Rewired by AI
 
