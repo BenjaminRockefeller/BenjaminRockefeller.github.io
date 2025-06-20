@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+        },{id: "nav-项目仓库展示",
+          title: "项目仓库展示",
+          description: "展示本人在 GitHub 上的核心 AI 项目与公开代码，涵盖 RAG 系统、LoRA 微调、智能体编排等方向。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
