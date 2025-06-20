@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-项目仓库展示",
-          title: "项目仓库展示",
-          description: "展示本人在 GitHub 上的核心 AI 项目与公开代码，涵盖 RAG 系统、LoRA 微调、智能体编排等方向。",
+        },{id: "nav-blog-amp-media",
+          title: "Blog &amp; Media",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/repositories/";
+            window.location.href = "/blog-and-media/";
           },
         },{id: "nav-blog",
           title: "blog",
