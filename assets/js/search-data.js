@@ -423,12 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
+          section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
@@ -468,6 +463,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/financial-rag/";
+            },},{id: "projects-project-2-intelligent-quantitative-strategy-generation-platform",
+          title: 'Project 2｜Intelligent Quantitative Strategy Generation Platform',
+          description: "Causality-Aware and RLHF-Based Backtesting Optimization System",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project2/";
             },},{
         id: 'social-email',
         title: 'email',
