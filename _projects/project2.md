@@ -1,12 +1,13 @@
 ---
-layout: page
+layout: project
 title: "Project 2｜Intelligent Quantitative Strategy Generation Platform"
-permalink: /projects/project2/
+permalink: /projects/quant-strategy/
 description: "Causality-Aware and RLHF-Based Backtesting Optimization System"
 importance: 2
 category: work
 related_publications: false
 ---
+
 
 ## ✅ Project 2｜Intelligent Quantitative Strategy Generation Platform
 
