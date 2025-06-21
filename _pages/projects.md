@@ -3,58 +3,73 @@ layout: page
 title: Projects
 permalink: /projects/
 description: >
-  A curated collection of advanced AI systems in LLM alignment, financial modeling, multimodal generation, and enterprise deployment.
+  A curated portfolio of applied AI systems across research, engineering, and business.
 nav: true
 nav_order: 2
 ---
 
-## Projects
+## 🧠 Projects Overview
 
-A selection of cutting-edge applied AI systems developed by **Benjamin L. Rockefeller (Lai Jianming)**.  
-These projects span private LLM deployment, multimodal content generation, explainable quant finance, agent orchestration, and inference optimization—demonstrating real-world deployment, research potential, and engineering excellence.
+Explore a collection of real-world AI projects spanning **academic research**, **engineering implementation**, and **commercial applications**. Select a category below:
 
----
-
-### 💰 Financial Research Report Generation System
-**Type:** Finance / RAG / Private Deployment  
-RAG + Knowledge Graph for hallucination-resistant equity research under private deployment.  
-👉 [View Project](/projects/financial-rag.html)
+<div style="margin-bottom: 1.5rem;">
+  <a href="#academic" class="btn btn-outline-primary btn-sm">Academic</a>
+  <a href="#engineering" class="btn btn-outline-primary btn-sm">Engineering</a>
+  <a href="#commercial" class="btn btn-outline-primary btn-sm">Commercial</a>
+</div>
 
 ---
 
-### 📈 Intelligent Quantitative Strategy Platform
-**Type:** Finance / RLHF / Causal Modeling  
-Combining causal graphs and RLHF for interpretable and adaptive backtesting pipelines.  
-👉 [View Project](/projects/quant-strategy.html)
+## 📘 Academic Projects {#academic}
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>📚 Project 1｜Financial Research Report Generation Platform</h4>
+  <p>A context-aware RAG system with private deployment for U.S. stock market analysis.</p>
+  <p><strong>Tags:</strong> RAG, Finance, Private Deployment</p>
+  <a href="/projects/financial-rag.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
 
 ---
 
-### 🛡️ AI-Driven Financial Fraud Detection System
-**Type:** Finance / Agent / Graph Neural Network  
-LangGraph-based agent collaboration with GAT and RLHF for risk-aware decision making.  
-👉 [View Project](/projects/fraud-detection.html)
+## 🛠 Engineering Projects {#engineering}
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>⚙️ Project 5｜High-Performance Multi-Model Inference Platform</h4>
+  <p>Low-latency inference optimization using tensor parallelism and INT8 quantization.</p>
+  <p><strong>Tags:</strong> Inference, Quantization, DeepSpeed, OpenVINO</p>
+  <a href="/projects/inference-opt.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>🚀 Project 4｜Enterprise LLM Deployment Optimization</h4>
+  <p>QLoRA fine-tuning + vLLM inference for cost-effective, private multi-task deployments.</p>
+  <p><strong>Tags:</strong> LLM, QLoRA, vLLM, Private Cloud</p>
+  <a href="/projects/llm-deploy.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
 
 ---
 
-### 🚀 Enterprise LLM Fine-tuning & Deployment
-**Type:** Deployment / QLoRA / Multi-task Finetuning  
-QLoRA micro-finetuning + vLLM inference for cost-efficient multi-task adaptation.  
-👉 [View Project](/projects/llm-deploy.html)
+## 💼 Commercial Projects {#commercial}
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>🧬 Project 6｜Multimodal Content Generation Platform</h4>
+  <p>Causality-aware AI system for generating short video scripts, image+text, and voice content.</p>
+  <p><strong>Tags:</strong> Multimodal, Content Gen, CLIP, Whisper</p>
+  <a href="/projects/multimodal-gen.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>📈 Project 2｜Intelligent Quantitative Strategy Platform</h4>
+  <p>Combines causal modeling and RLHF for explainable backtesting in quant finance.</p>
+  <p><strong>Tags:</strong> Quant, Causal Inference, RLHF</p>
+  <a href="/projects/quant-strategy.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
+
+<div style="border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+  <h4>🛡️ Project 3｜AI-Driven Financial Fraud Detection System</h4>
+  <p>Multi-agent system using LangGraph, RLHF, and GAT for enterprise risk control.</p>
+  <p><strong>Tags:</strong> Fraud, Agent, GNN, RLHF</p>
+  <a href="/projects/fraud-detection.html" class="btn btn-sm btn-outline-primary">View Project</a>
+</div>
 
 ---
-
-### ⚙️ High-Performance LLM Inference System
-**Type:** Inference / Optimization / Quantization  
-Tensor parallelism, INT8 quantization, and batching orchestration for low-latency deployment.  
-👉 [View Project](/projects/inference-opt.html)
-
----
-
-### 🧬 Multimodal Content Generation Platform
-**Type:** Generation / Multimodal / Voice + Text + Image  
-Causality-aware generation for short videos, voice-guided editing, and image-text synthesis.  
-👉 [View Project](/projects/multimodal-gen.html)
-
----
-
-<!-- Future filtering UI (optional): Can be enabled via client-side JavaScript or with static tags later -->
