@@ -1,80 +1,72 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: "Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform"
+description: "Focused on Sentiment Classification and Named Entity Recognition Tasks"
+importance: 4
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### ✅ Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform  
+(Focused on Sentiment Classification and Named Entity Recognition Tasks)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+---
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+#### Project Overview  
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+To address key challenges in enterprise-level large language model deployment—namely high fine-tuning cost, low inference efficiency, and poor cross-task generalization—we built a lightweight fine-tuning platform tailored for sentiment analysis and named entity recognition (NER). The system integrates QLoRA-based parameter-efficient tuning with RLHF-based instruction alignment, supports multi-task adaptation, enables stable training, and delivers fast, high-throughput inference in private environments. The solution is applicable to government, finance, and e-commerce sectors.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+#### Project Contributions  
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Led the design and implementation of a QLoRA-based lightweight fine-tuning pipeline.  
+  - Backbone: ChatGLM2-6B  
+  - Fine-tuning: LoRA Adapter only (rank=8)  
+  - Result: GPU memory usage reduced from 24 GB to 7.2 GB; training cost decreased by ~60%, significantly lowering the deployment barrier for enterprises.
 
-{% raw %}
+- Constructed a unified multi-task dataset:  
+  - 5,000 manually curated sentiment classification samples (positive/negative)  
+  - ~120,000 characters of annotated NER data (People’s Daily corpus)  
+  - Unified prompt template and label alignment mechanism ensured cross-task consistency and transferability.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Designed a two-stage RLHF reward strategy:  
+  - Stage 1: GPT-3.5 used to score instruction execution quality  
+  - Stage 2: Weighted PPO optimization with metrics:  
+    - Sentiment F1  
+    - NER Recall  
+    - Instruction score  
+  - Dynamic reward ratio: 0.5 : 0.3 : 0.2  
+  - Solved early-stage instability and improved generation consistency by ~12%.
 
-{% endraw %}
+- Built a complete RLHF training loop with Huggingface TRL (PPO)  
+  - Tuned reward clipping and dynamic baseline strategies  
+  - Mitigated gradient explosion and stabilized training
+
+- Remotely conducted cost-efficient training using Magicoder (¥7–15/h) and Paperspace ($1.25/h) A100 GPU instances  
+  - Total training time > 40 hours  
+  - Cost controlled within $50–60—significantly lower than traditional full-parameter tuning
+
+- Implemented a distributed, fault-tolerant training framework using PyTorch Lightning + DistributedDataParallel  
+  - Supported resume-from-checkpoint, error recovery, and real-time monitoring for long-duration jobs
+
+- Integrated vLLM inference engine with TensorRT INT4 quantization  
+  - Achieved <350ms average inference latency  
+  - Sustained 50 req/s throughput on private servers  
+  - Suitable for mid-sized enterprise on-premise applications
+
+- Conducted benchmark experiments comparing performance improvements:  
+  - QLoRA + RLHF vs. full-parameter baseline  
+  - Sentiment F1: 88.1% → 92.3%  
+  - NER Recall: 83.5% → 90.2%  
+  - Achieved superior performance and deployment efficiency
+
+- Completed full private deployment pipeline  
+  - Exported LoRA weights and conformed to OpenAI Chat API interface  
+  - Successfully tested and integrated in government, financial, and e-commerce customer service scenarios  
+  - Verified transferability and generalization
+
+---
+
+#### Tech Stack  
+
+ChatGLM2‑6B, QLoRA, LoRA Adapter, PyTorch Lightning, DistributedDataParallel, Unified Prompting, Huggingface TRL, PPO, GPT-3.5 Reward Model, vLLM, TensorRT INT4, FastAPI, Docker, WandB, Magicoder.ai, Paperspace
