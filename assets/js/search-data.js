@@ -423,12 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-",
-          title: '',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+          section: "News",},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -468,6 +463,11 @@ ninja.data = [{
           description: "Causality-Aware and RLHF-Based Backtesting Optimization System",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project2/";
+            },},{id: "projects-project-3-breaking-false-positives-and-process-disruptions-multi-agent-financial-fraud-detection-system",
+          title: 'Project 3 | Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection...',
+          description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project3/";
             },},{
         id: 'social-email',
         title: 'email',
