@@ -423,14 +423,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-4-enterprise-grade-llm-fine-tuning-and-deployment-optimization-platform",
-          title: 'Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform',
-          description: "Focused on Sentiment Classification and Named Entity Recognition Tasks",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+          section: "News",},{id: "projects-project-5-high-performance-multi-model-inference-optimization-platform",
+          title: 'Project 5｜High-Performance Multi-Model Inference Optimization Platform',
+          description: "Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
@@ -468,6 +463,11 @@ ninja.data = [{
           description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project3/";
+            },},{id: "projects-project-4-enterprise-grade-llm-fine-tuning-and-deployment-optimization-platform",
+          title: 'Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform',
+          description: "Focused on Sentiment Classification and Named Entity Recognition Tasks",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project4/";
             },},{
         id: 'social-email',
         title: 'email',
