@@ -423,11 +423,11 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1-financial-research-report-generation-platform",
-          title: 'Project 1｜Financial Research Report Generation Platform',
+          section: "News",},{id: "projects-project-1-financial-research-report-generation-platform-rag-enhanced-contextual-reasoning-with-on-premise-deployment-tailored-for-u-s-equity-market",
+          title: 'Project 1｜Financial Research Report Generation Platform: RAG-Enhanced Contextual Reasoning with On-Premise Deployment (Tailored...',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/financial-rag/";
+              window.location.href = "/projects/project1/";
             },},{id: "projects-project-2-intelligent-quantitative-strategy-generation-platform",
           title: 'Project 2｜Intelligent Quantitative Strategy Generation Platform',
           description: "Causality-Aware and RLHF-Based Backtesting Optimization System",
