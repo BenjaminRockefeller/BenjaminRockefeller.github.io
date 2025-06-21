@@ -1,9 +1,11 @@
 ---
-layout: page
-title: "Project 3 | Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection System"
-description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense"
+layout: project
+title: "Project 3｜Multi-Agent Financial Fraud Detection System"
+permalink: /projects/financial-fraud/
+description: "LangGraph + GAT + RLHF + Prompt Defense"
 importance: 3
 category: work
+related_publications: false
 ---
 #### 1. Project Overview
 
