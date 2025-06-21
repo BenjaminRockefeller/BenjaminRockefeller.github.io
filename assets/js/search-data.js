@@ -423,12 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-5-high-performance-multi-model-inference-optimization-platform",
-          title: 'Project 5｜High-Performance Multi-Model Inference Optimization Platform',
-          description: "Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
+          section: "News",},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
@@ -468,6 +463,11 @@ ninja.data = [{
           description: "Focused on Sentiment Classification and Named Entity Recognition Tasks",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project4/";
+            },},{id: "projects-project-5-high-performance-multi-model-inference-optimization-platform",
+          title: 'Project 5｜High-Performance Multi-Model Inference Optimization Platform',
+          description: "Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project5/";
             },},{
         id: 'social-email',
         title: 'email',
