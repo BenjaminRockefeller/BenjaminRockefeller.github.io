@@ -433,11 +433,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project2/";
-            },},{id: "projects-project-3-multi-agent-financial-fraud-detection-system",
-          title: 'Project 3｜Multi-Agent Financial Fraud Detection System',
-          description: "LangGraph + GAT + RLHF + Prompt Defense",
+            },},{id: "projects-project-3-multi-agent-financial-fraud-detection-system-langgraph-gat-rlhf-prompt-defense",
+          title: 'Project 3｜Multi-Agent Financial Fraud Detection System: LangGraph + GAT + RLHF + Prompt...',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/financial-fraud/";
+              window.location.href = "/projects/project3/";
             },},{id: "projects-project-4-enterprise-grade-llm-fine-tuning-and-deployment-optimization-platform",
           title: 'Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform',
           description: "Focused on Sentiment Classification and Named Entity Recognition Tasks",
