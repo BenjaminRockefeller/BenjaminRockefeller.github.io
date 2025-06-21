@@ -1,15 +1,10 @@
 ---
 layout: page
-title: Project 3｜Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection System
-description: Based on LangGraph + GAT + RLHF + Prompt Injection Defense
+title: "Project 3 | Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection System"
+description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense"
 importance: 3
 category: work
 ---
-
-### ✅ Project 3｜Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection System (Based on LangGraph + GAT + RLHF + Prompt Injection Defense)
-
----
-
 #### 1. Project Overview
 
 This project targets critical issues in financial fraud detection systems: high false positive rates, broken decision chains, delayed responses, and vulnerability to prompt attacks. We developed an enterprise-level multi-agent fraud detection system, combining LangGraph-based task routing, Graph Attention Networks (GAT), RLHF fine-tuning, and multi-layered prompt injection defense. The platform handles both structured transaction data and unstructured behavioral intent, suitable for credit approval, risk profiling, and compliance auditing.
