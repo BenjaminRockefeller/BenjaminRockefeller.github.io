@@ -1,24 +1,18 @@
 ---
 layout: page
-title: "Project 1｜Financial Research Report Generation Platform"
-permalink: /projects/financial-rag/
+title: "Project 1｜Financial Research Report Generation Platform: RAG-Enhanced Contextual Reasoning with On-Premise Deployment (Tailored for U.S. Equity Market)"
+permalink: /projects/project1/
 importance: 1
 category: work
 ---
 
-## ✅ Project 1 | Financial Research Report Generation Platform
-
-### RAG-Enhanced Contextual Reasoning with On-Premise Deployment (Tailored for U.S. Equity Market)
-
----
-
-### 1. Project Overview
+### 🔍 Project Overview
 
 This project addresses major challenges in financial research report generation, including redundant content, hallucination-prone outputs, unstructured formatting, and low automation levels. We built a RAG-enhanced system capable of controllable generation, modular maintenance, and high-fidelity citation, with full support for on-premise deployment. The pipeline integrates financial corpus collection, multi-stage semantic retrieval, prompt injection, multi-model tuning, and optimized inference.
 
 ---
 
-### 2. Motivation & Problem Statement
+### 🧭 Motivation & Problem Statement
 
 Based on interviews with over 30 private equity and research institutions, we identified the following pain points:
 
@@ -31,7 +25,7 @@ RAG-enhancement · Local deployment · Module reusability · Faithful generation
 
 ---
 
-### 3. System Architecture
+### 🛠️ System Architecture
 
 **Pipeline**:  
 Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Injection → LLM Inference → Hallucination Filtering → On-Prem Deployment
@@ -42,7 +36,7 @@ Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Inject
 
 ---
 
-### 4. Evaluation Results
+### 📊 Evaluation Results
 
 | Model                | Hallucination Rate | Consistency Score | Structural Integrity |
 |---------------------|--------------------|-------------------|----------------------|
@@ -51,7 +45,7 @@ Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Inject
 
 ---
 
-### 5. Deployment & Performance
+### 🚀 Deployment & Performance
 
 - Latency < 300ms, QPS = 52
 - 48 GPU-hours, ~$65 cost
@@ -59,7 +53,7 @@ Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Inject
 
 ---
 
-### 6. Expert Validation
+### 👨‍⚖️ Expert Validation
 
 - Reviewed by U.S. equity analysts
 - Reported improvements in:
@@ -69,7 +63,7 @@ Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Inject
 
 ---
 
-### 7. Roadmap
+### 🧭 Roadmap
 
 - Chart-to-text generation
 - Event-chain reasoning
@@ -77,7 +71,7 @@ Data Collection → BM25 → Dense Retrieval → Cross-Encoder → Prompt Inject
 
 ---
 
-### 8. Tech Stack
+### 🧰 Tech Stack
 
 ChatGLM2-6B, InternLM2, Yi-6B, BM25, Faiss-HNSW, Chinese-BERT Cross-Encoder,  
 TruthfulQA, MMLU-Finance, Prompt Injection, LoRA, QLoRA, FastAPI, Docker, Redis, PyTorch Lightning, WandB
