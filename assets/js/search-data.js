@@ -423,12 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
+          section: "News",},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -468,6 +463,11 @@ ninja.data = [{
           description: "Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project5/";
+            },},{id: "projects-project-6-multimodal-content-generation-and-publishing-platform",
+          title: 'Project 6｜Multimodal Content Generation and Publishing Platform',
+          description: "Causality-Aware and Controllable Generation System for Short Video Scripts, Image+Text Content, and Voice-Based Editing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project6/";
             },},{
         id: 'social-email',
         title: 'email',
