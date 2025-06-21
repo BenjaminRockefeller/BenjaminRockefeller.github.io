@@ -1,80 +1,65 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: "Project 6｜Multimodal Content Generation and Publishing Platform"
+description: "Causality-Aware and Controllable Generation System for Short Video Scripts, Image+Text Content, and Voice-Based Editing"
+importance: 6
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### ✅ Project 6｜Multimodal Content Generation and Publishing Platform  
+(Causality-Aware and Controllable Generation System for Short Video Scripts, Image+Text Content, and Voice-Based Editing)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+---
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+#### Project Overview  
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+This project introduces **ChatPPT**, a multimodal content automation platform designed to streamline the creative workflow for short video producers, MCN agencies, and e-commerce marketing teams. The platform enables end-to-end automation—from script writing to image-text pairing and voice-controlled publishing—optimized for platforms such as TikTok, Xiaohongshu, and Instagram. It supports natural language input, automated image-text generation, and voice-based real-time control, significantly enhancing both productivity and creative expression.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+#### Project Contributions  
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Led the design and implementation of a full-stack multimodal content chain:  
+  `Text Input → Image+Text Generation → Voice Control → Web Preview`,  
+  enabling 0-to-1 structured content creation in a closed loop.
 
-{% raw %}
+- Built a multimodal dataset to support the full generation pipeline:  
+  - **Text**: ~20,000 short video scripts across marketing, lifestyle, and educational themes, generated via GPT + template collection.  
+  - **Image**: 25,000 open-source images fetched via Pexels/Pixabay APIs; 15,000 text-image pairs selected using hybrid manual + BERTScore filtering.  
+  - **Voice**: 8,000+ real user voice commands for operations such as "add page", "replace image", "regenerate content".
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Developed a text generation module powered by ChatGLM2.5, with three-stage prompt design:  
+  `Script Theme → Plot Outline → Sectioned Output`.  
+  Included stylistic and character-based control mechanisms.
 
-{% endraw %}
+- Built an image matching engine combining CLIP and BM25 retrieval.  
+  Achieved **Top-1 accuracy of 89.3%**, ensuring semantic-visual alignment between text and visuals.
+
+- Implemented a voice control module using Whisper for transcription and a 12-intent classification model for command execution.  
+  Achieved **93.5% accuracy** in voice-to-action mapping.
+
+- Deployed backend infrastructure using FastAPI + Redis (async task queue)  
+  and Streamlit for the front-end interactive editing and preview interface.  
+  Supported remote access and real-time content updates.
+
+- Achieved generation time of **<90 seconds per full 5-page content unit**,  
+  compared to **~3 hours per unit via manual workflows**, greatly reducing cost and turnaround time.
+
+- Cost-optimized by deploying the prototype on Hugging Face Spaces (free tier).  
+  Backend runs on a single A10 GPU with **marginal cost per content < $0.005**.
+
+---
+
+#### Future Roadmap (v2.0 Plan)  
+
+- Introduce **causal graph modeling** for user behavior:  
+  `Click Path → Conversion Outcome`, enabling real-time impact evaluation of generated content.  
+- Support **cross-lingual style transfer**, adapting for Chinese, English, Japanese, Korean, and region-specific cultural nuances.  
+- Integrate **content agent framework** for automatic content generation based on user profile + A/B testing loop.  
+- Launch **Chrome extension and WeChat Mini Program** to complete cross-platform deployment.
+
+---
+
+#### Tech Stack  
+
+ChatGLM2.5, CLIP, Whisper, BM25, BERTScore, FastAPI, Redis, Streamlit, LangChain, PPTX Generator, Pexels API, MongoDB, Docker, Hugging Face Spaces
