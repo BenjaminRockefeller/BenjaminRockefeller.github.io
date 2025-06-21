@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A curated collection of advanced AI systems in LLM alignment, financial modeling, multimodal generation, and enterprise deployment.",
+          description: "A curated portfolio of applied AI systems across research, engineering, and business.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
