@@ -433,11 +433,11 @@ ninja.data = [{
           description: "Causality-Aware and RLHF-Based Backtesting Optimization System",
           section: "Projects",handler: () => {
               window.location.href = "/projects/quant-strategy/";
-            },},{id: "projects-project-3-breaking-false-positives-and-process-disruptions-multi-agent-financial-fraud-detection-system",
-          title: 'Project 3 | Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection...',
-          description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense",
+            },},{id: "projects-project-3-multi-agent-financial-fraud-detection-system",
+          title: 'Project 3｜Multi-Agent Financial Fraud Detection System',
+          description: "LangGraph + GAT + RLHF + Prompt Defense",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/project3/";
+              window.location.href = "/projects/financial-fraud/";
             },},{id: "projects-project-4-enterprise-grade-llm-fine-tuning-and-deployment-optimization-platform",
           title: 'Project 4｜Enterprise-Grade LLM Fine-Tuning and Deployment Optimization Platform',
           description: "Focused on Sentiment Classification and Named Entity Recognition Tasks",
