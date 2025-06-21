@@ -1,80 +1,67 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: "Project 5｜High-Performance Multi-Model Inference Optimization Platform"
+description: "Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment"
+importance: 5
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### ✅ Project 5｜High-Performance Multi-Model Inference Optimization Platform  
+(Integrating Tensor Parallelism and INT8 Quantization for Low-Latency Deployment)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+---
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+#### Project Overview  
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+To tackle key challenges in enterprise-level LLM inference—including high memory consumption, long response latency, and limited multi-terminal compatibility—we built a high-performance deployment platform that integrates tensor parallelism, pipeline parallelism, and low-precision quantization. This platform supports multi-modal tasks, LoRA hot-swapping, and heterogeneous device scheduling. It is optimized for deployment in finance, government, manufacturing, and other latency-sensitive production environments.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+#### Project Contributions  
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Designed and implemented a distributed inference architecture using Huggingface Transformers + DeepSpeed, enabling **Tensor Parallel + Pipeline Parallel** execution.  
+  - Optimized context window up to 128K  
+  - Integrated with `vLLM` engine  
+  - Achieved a **3.7× improvement** in QPS  
+  - Stable for multi-turn dialogue tasks
 
-{% raw %}
+- Built a hybrid **INT8 + FP16 quantization path**:  
+  - Applied Quantization-Aware Training (QAT) on ChatGLM2-6B  
+  - Deployed with `OpenVINO` for CPU inference acceleration  
+  - Reduced memory usage by **~53%**  
+  - Cut average response latency to **<2.8s**
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Developed a **unified inference API** using FastAPI + JSON-RPC:  
+  - Supported prompt batching, auto-routing by task type, and concurrent request management  
+  - Increased interface success rate from **92.6% → 99.3%**
 
-{% endraw %}
+- Built a containerized deployment system with Docker Compose:  
+  - Integrated `Nginx` for load balancing, token authentication, and SSL encryption  
+  - Enabled automatic switching between GPU/CPU for hybrid scheduling and secure intranet access
+
+- Implemented **hot-pluggable model update modules**:  
+  - Compatible with self-trained LoRA/QLoRA weight formats  
+  - Enabled dynamic model switching without restart  
+  - Average switch time: **<1.3s**
+
+- Curated a **multi-task inference dataset (21,000 samples)**:  
+  - Sourced from enterprise support logs, research prompts, and customer service tickets  
+  - Applied regex-based cleaning + instruction template transformation  
+  - Covered tasks: generation, summarization, classification, and NER
+
+- Resolved GPU scheduling conflicts between vLLM and pipeline parallelism:  
+  - Tuned `tensor_parallel_size` and `async_batching` configurations  
+  - Stably supported 8-GPU distributed inference  
+  - Increased task throughput by **~2.4×**
+
+- Performance benchmarking showed over **30% improvement** compared to baseline across:  
+  - Inference throughput  
+  - API response rate  
+  - Model switch efficiency  
+    Platform has been successfully deployed in quantitative research, government Q&A, and internal CRM systems.
+
+---
+
+#### Tech Stack  
+
+ChatGLM2‑6B, DeepSpeed, vLLM, Tensor Parallelism, Pipeline Parallelism, INT8 QAT, OpenVINO, FastAPI, JSON-RPC, LoRA / QLoRA, Docker Compose, Nginx, SSL, Token Auth, WandB
