@@ -432,7 +432,7 @@ ninja.data = [{
           title: 'Project 2｜Intelligent Quantitative Strategy Generation Platform',
           description: "Causality-Aware and RLHF-Based Backtesting Optimization System",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/project2/";
+              window.location.href = "/projects/quant-strategy/";
             },},{id: "projects-project-3-breaking-false-positives-and-process-disruptions-multi-agent-financial-fraud-detection-system",
           title: 'Project 3 | Breaking False Positives and Process Disruptions: Multi-Agent Financial Fraud Detection...',
           description: "Based on LangGraph + GAT + RLHF + Prompt Injection Defense",
